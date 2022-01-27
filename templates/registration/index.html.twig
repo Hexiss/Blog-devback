@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <h1>Créer ton compte<h1>
+
+    {{ form_start(form) }}
+
+    {{ form_row(form.email, {'label': 'Adresse Mail','attr': {'placeholder': "Adresse mail"}}) }}
+
+    {{ form_row(form.password, {'label': 'mot de passe','attr': {'placeholder': "mot de passe"}}) }}
+
+        <button class="btn btn-lg btn-primary" type="submit">
+        S'inscrire
+        </button>
+
+    {{ form_end(form) }}
+
+
+{% endblock %}
